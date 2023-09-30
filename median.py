@@ -10,5 +10,12 @@ while True:
     else:
         break
 
+
+
 numbers.sort()
-print(numbers[len(numbers)//2])
+if len(numbers) % 2 == 0:
+    print(len(numbers))
+    mean = (numbers[int(len(numbers)/2)] + numbers[int(len(numbers)/2) - 1]) / 2
+    print(mean)
+else:
+    print(numbers[len(numbers)//2])
